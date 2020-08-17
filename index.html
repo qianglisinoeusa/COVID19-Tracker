@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+    
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body{
+    background-image: url('https://media1.giphy.com/media/dVuyBgq2z5gVBkFtDc/giphy.gif');
+    background-color: "black";
+    height: 100vh;
+    padding:0;
+    margin:0;
+    }
+
+
+/* Style the header */
+header {
+  background-color: rgb(15, 13, 13);
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  display: block;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 35%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 65%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+
+/* Style the footer */
+footer {
+  background-color: rgb(12, 12, 12);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 120%;
+}
+
+</style>
+
+<header>
+    <h2>COVID19 Tracker<h2>    
+</header>
+
+<div class="row">
+    <div class="column side">
+        <div class="flourish-embed flourish-chart" data-src="story/230110">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+        </div>
+        
+        <div class="flourish-embed flourish-chart" data-src="story/230085">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+        </div>
+        
+        <div class="flourish-embed flourish-chart" data-src="story/230114">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+        </div>
+        
+    </div>
+
+    <div class="column middle">
+        <div>
+            <span>
+                <h1 style="color: white;">Coronavirus disease 2019</h1>
+                <p style="color: white;">
+                    <cite>In February 2020, the World Health Organization announced they had chosen a name for the disease caused by SARS-CoV-2: COVID-19, replacing the temporary name "2019-nCoV."
+                    "Co" is for "corona," "Vi" for "virus," and "D" for "disease," and "19" for the year 2019.<br><br>     
+
+                    Coronavirus disease 2019 (COVID‑19) is an infectious disease caused by severe acute respiratory
+                    syndrome coronavirus 2 (SARS-CoV-2). As of 17 August 2020, more than 21.5 million cases have been 
+                    reported across 188 countries and territories, resulting in more than 773,000 deaths. 
+                    More than 13.5 million people have recovered. <cite></p><br><br>
+                
+                <h1 style="color: white;">Coronavirus 2019 Resource Center</h1>
+                <div class="container">
+                    <iframe class="responsive-iframe" src="https://coronavirus.jhu.edu/map.html"></iframe>
+                </div> 
+            </span>
+        </div>
+        <br><br>
+        <span>
+        <h1 style="color: white;">Coronavirus 2019 Confirmed/Death Cases Statistics Center</h1>   
+        <div class="flourish-embed flourish-map" data-src="story/225979">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+        </div>
+        </span>
+    </div>
+</div>
+<div class="row">
+    <div class="flourish-embed flourish-table" data-src="story/230195">
+        <script src="https://public.flourish.studio/resources/embed.js"></script>
+    </div>
+</div>
+
+</body>
+
+
+	Neuroscience && Neuroimaging Research Center<br>
+      </font></p>
+
+<footer>&copy; Qiang LI, 2019-2020<br>COVID19 CHANGED THE WORLD</footer>
+
+</html>
